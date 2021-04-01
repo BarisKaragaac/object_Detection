@@ -24,7 +24,7 @@ def create_tf_example(filename, encoded_jpeg, annotations):
         - tf_example [tf.Train.Example]: tf example in the objection detection api format.
     """
 
-    # Converting the data to the desired format
+    # Converting the data to the required format
     encoded_jpg_io = io.BytesIO(encoded_jpeg)
     image = Image.open(encoded_jpg_io)
     width, height = image.size
