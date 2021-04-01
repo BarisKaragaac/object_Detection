@@ -118,7 +118,7 @@ The Augmentation options chosen here are;
 - random_rgb_to_gray:
     This augmentation is used so the the model can better recognize objects even in the dark or in zones where the view is blured due to fog.
 - random_adjust_brightness:
-    This randomly adjusts the brigthness of the images and enhances the object recognition of the model in daylight or in the night in torch light.
+    This randomly adjusts the brightness of the images and enhances the object recognition of the model in daylight or in the night in torch light.
 - random_adjust_contrast:
     This modifies the contrast of the images to make it more dark and trains the model to recognize images in dart climates.
 - random_distort_color:
