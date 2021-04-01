@@ -1,7 +1,7 @@
 # Project overview
 In this project, we use data from the [Waymo Open dataset](https://waymo.com/open/) in order to create a convolutional neural network to detect  and classify  objects. This is done by following steps such as data acquisition and processing, Exploratory data analysis(EDA) , cross validation, Data augmentation and creation of animations. 
 
-Here is the [link](https://github.com/BarisKaragaac/tensor_flow) to this project's repository
+Here is the [link](https://github.com/BarisKaragaac/object_detection) to this project's repository
 
 # Instructions
 ## Requirements
