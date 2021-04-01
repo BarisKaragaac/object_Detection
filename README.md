@@ -144,7 +144,7 @@ Throught the different optimizers which could be used here like Mini batch, Mome
 The architecture [resnet152](https://hub.tensorflow.google.cn/tensorflow/retinanet/resnet152_v1_fpn_640x640/1) could be used but finally resnet50 was retained.
 
 
-After running the training with these augmentations appplied, it can be seen from the new loss chart that the model is not more over feeting since the evaluation and training loss are now at the same level in total loss.
+After running the training with these augmentations applied, it can be seen from the new loss chart that the model is not more over feeting since the evaluation and training loss are now at the same level in total loss.
  ![Training result](images/retrain3.png)
 
     The video animation.mp4 demonstrates the working of this model in real life situations. 
