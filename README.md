@@ -122,7 +122,7 @@ The Augmentation options chosen here are;
 - random_adjust_contrast:
     This modifies the contrast of the images to make it more dark and trains the model to recognize images in dart climates.
 - random_distort_color:
-    With image colors randomly distorted, the modle will better recognize vehicles with any typre of paint, and it will also enhance image recognition when moving at high speed.
+    With image colors randomly distorted, the model will better recognize vehicles with any typre of paint, and it will also enhance image recognition when moving at high speed.
  
  Bellow are some images illustrating the result of these augmentations.
 ![Training result](images/augmentation1.png)
@@ -147,4 +147,4 @@ The architecture [resnet152](https://hub.tensorflow.google.cn/tensorflow/retinan
 After running the training with these augmentations appplied, it can be seen from the new loss chart that the model is not more over feeting since the evaluation and training loss are now at the same level in total loss.
  ![Training result](images/retrain3.png)
 
-    The video animation.mp4 demonstrates the working of this model in real life situations 
+    The video animation.mp4 demonstrates the working of this model in real life situations. 
