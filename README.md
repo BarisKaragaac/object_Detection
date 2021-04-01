@@ -102,15 +102,15 @@ After monitoring the training through the tensorboard, the following was discove
 ![Training result](images/train2.png)
 - From the precision charts we can see that the Detection boxes mean average precision is quite low. As the training goes on, the precision of object detection boxes also increases but the overall precision remains low.
 ![Training result](images/train3.png)
-- Here validation loss is higher that training loss. This shows that there is some over fitting in the data set though it is not that much. THis behaviour was expected and it it should be enhanced with data augmentstion which will give a better recognition of unkonwn data to the model.
+- Here validation loss is higher that training loss. This shows that there is some over fitting in the data set though it is not that much. This behaviour was expected and it should be enhanced with data augmentstion which will give a better recognition of unkonwn data to the model.
 
 
 #### Improve on the reference
 
-Since images where taken from different places having different climatic conditions and which are differently lit, the data augmentation options which would yield the best results are those that provide some variation in the captured environment like scallin up up and down, changing the color, contrast, brigthness and intensity in order the permit the model to detect objects from environments with any type of climate and bightness.
+Since images where taken from different places having different climatic conditions and which are differently lit, the data augmentation options which would yield the best results are those that provide some variation in the captured environment like scalling up and down, changing the color, contrast, brigthness and intensity in order the permit the model to detect objects from environments with any type of climate and bightness.
 The Augmentation options chosen here are;
 -  random_image_scale:
-    Since there are cases where the vehicles can vbe close enough to the camera or too far from in, this augmentation was chosen in order to simulate that by randomly enlarging or minimizing images. This should enhance the training. 
+    Since there are cases where the vehicles can vbe close enough to the camera or too far from it, this augmentation was chosen in order to simulate that by randomly enlarging or minimizing images. This should enhance the training. 
 
 - random_horizontal_flip:
     This flips the position of objects in images this will help to better train the model to recognize objects from any direction.
@@ -139,7 +139,7 @@ Throught the different optimizers which could be used here like Mini batch, Mome
 - The total steps where increased to 30000. 
 - The warmup steps where increased to 2500.
 
-    This will make the training more effitient.
+    This will make the training more efficient.
 
 The architecture [resnet152](https://hub.tensorflow.google.cn/tensorflow/retinanet/resnet152_v1_fpn_640x640/1) could be used but finally resnet50 was retained.
 
