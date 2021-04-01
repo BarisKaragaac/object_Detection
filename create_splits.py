@@ -35,10 +35,10 @@ def split(data_dir):
 
     fileArray = glob.glob('/home/workspace/data/processed/*')
 
-    #shuffle the data in the array
+    #Shuffle the data in the array
     shuffle(fileArray)
     
-    #Split the .tfrecord files in different folders in the rationj 80:10:10 
+    #Split the .tfrecord files in different folders in the ration 80:10:10 
     for name in fileArray:
         if( (fileArray.index(name)+1)/len(fileArray)*100 <= 80 and os.path.isfile(name) ):
             head_tail = os.path.split(name)
