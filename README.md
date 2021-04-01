@@ -52,7 +52,7 @@ tf object detection api
 - This folder contains the checkpoints of the pretrained models.
 
 *project_folder/*
-- create_splits.py: Creates the test, val and train folders and partions the datasets into them.
+- create_splits.py: Creates the test, val and train folders and partitions the datasets into them.
 - download_process.py: Downloads data sets from Waymo Open Dataset and processes them into acceptavble format.
 - edit_config.py: this file is used to generate configuration files used for model training.
 - Exploratory Data Analysis.ipynb: Used to analyse the image and annotation data by displaying them.

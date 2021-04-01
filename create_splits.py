@@ -38,7 +38,7 @@ def split(data_dir):
     #Shuffle the data in the array
     shuffle(fileArray)
     
-    #Split the .tfrecord files in different folders in the ratio 80:10:10 
+    #Split the .tfrecord files in different folders in the ratio 80:10:10. 
     for name in fileArray:
         if( (fileArray.index(name)+1)/len(fileArray)*100 <= 80 and os.path.isfile(name) ):
             head_tail = os.path.split(name)

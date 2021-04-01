@@ -13,7 +13,7 @@ from utils import *
 
 def create_tf_example(filename, encoded_jpeg, annotations):
     """
-    This function create a tf.train.Example from the Waymo frame.
+    This function creates a tf.train.Example from the Waymo frame.
 
     args:
         - filename [str]: name of the image
