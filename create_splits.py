@@ -18,9 +18,9 @@ def split(data_dir):
         - data_dir [str]: data directory, /mnt/data
     """
     # TODO: Implement function
-    trainDir = '/home/workspace/data/processed/train'
-    validationDir = '/home/workspace/data/processed/val'
-    testDir = '/home/workspace/data/processed/test'
+    trainDir = data_dir + '/train'
+    validationDir =  data_dir + '/val'
+    testDir = data_dir + '/test'
 
     try:
         # Create target Directories
@@ -33,7 +33,7 @@ def split(data_dir):
     except FileExistsError:
         print("Directory already exists")
 
-    fileArray = glob.glob('/home/workspace/data/processed/*')
+    fileArray = glob.glob(data_dir)
 
     #Shuffle the data in the array
     shuffle(fileArray)
