@@ -137,7 +137,7 @@ The Augmentation options chosen here are;
 - The number of training steps where increased to 30000 to make the training more thorough.
 
 
-Throught the different optimizers which could be used here like Mini batch, Momentum and AdaGrad and RMSSProp,[Adam optimizer](https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/AdamOptimizer) was tested but the result was bad, precision was very low and unstable as seen below. 
+Throught the different optimizers which could be used here like Mini batch, Momentum and AdaGrad and RMSSProp,[Adam optimizer](https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/AdamOptimizer) was tested but the result was bad, precision and recall were very low and unstable as seen below. 
 ![Training result](images/adam1.png)
 ![Training result](images/adam2.png)
 
