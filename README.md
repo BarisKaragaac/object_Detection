@@ -134,17 +134,24 @@ The Augmentation options chosen here are;
 ![Training result](images/augmentation7.png)
 ![Training result](images/augmentation8.png)
 
+- The number of training steps where increased to 30000 to make the training more thorough.
 
-Throught the different optimizers which could be used here like Mini batch, Momentum and AdaGrad and RMSSProp, the best fit  which is used here is [Adam optimizer](https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/AdamOptimizer). 
-- The total steps where increased to 30000. 
-- The warmup steps where increased to 2500.
 
-    This will make the training more efficient.
+Throught the different optimizers which could be used here like Mini batch, Momentum and AdaGrad and RMSSProp,[Adam optimizer](https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/AdamOptimizer) was tested but the result was bad, precision was very low and unstable as seen below. 
+![Training result](images/adam1.png)
+![Training result](images/adam2.png)
+
+So Momentun optimizer was retained.
+
+
 
 The architecture [resnet152](https://hub.tensorflow.google.cn/tensorflow/retinanet/resnet152_v1_fpn_640x640/1) could be used but finally resnet50 was retained.
 
 
-After running the training with these augmentations applied, it can be seen from the new loss chart that the model is not more over feeting since the evaluation and training loss are now at the same level in total loss.
+After running the training with these augmentations applied, it can be seen from the new loss chart that the loss with augmentation is less than the loss that we had without augmentation.
+- It can also be seen that the overall precision and recall for the of the model with augmentations applied are higher than that of the original model without augmentations.
+ ![Training result](images/retrain1.png)
+ ![Training result](images/retrain2.png)
  ![Training result](images/retrain3.png)
 
-    The video animation.mp4 demonstrates the working of this model in real life situations. 
+    The video animation.mp4 demonstrates the working of this model in real life situations.
