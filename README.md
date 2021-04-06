@@ -148,8 +148,8 @@ So Momentun optimizer was retained.
 The architecture [resnet152](https://hub.tensorflow.google.cn/tensorflow/retinanet/resnet152_v1_fpn_640x640/1) could be used but finally resnet50 was retained.
 
 
-After running the training with these augmentations applied, it can be seen from the new loss chart that the loss with augmentation is less than the loss that we had without augmentation.
-- It can also be seen that the overall precision and recall for the of the model with augmentations applied are higher than that of the original model without augmentations.
+After running the training with these augmentations applied, it can be seen from the new loss chart that the loss with augmentation is less than the loss that we had without augmentation. This then results to a less significant error from the model during optimization.
+- It can also be seen that due to the applied augmentations the overall precision and recall of the model are higher and thus perform better in the recognition of objects in images. 
 - As seen in the key, the results without augmentation where stored in the experiment0 folder while those with augmentations where store in the reference folder. each curve has a different color.
  ![Training result](images/retrain1.png)
  ![Training result](images/retrain2.png)
